@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --color-blue: #d7f6fa;
+    --color-black: #000;
+    --color-antiwhite: #fcf8f3;
+    --color-antiwhite-hover: #ffdcb9;
+}
+
+body {
+    background-color: var(--color-blue);
+}
+
+.startLoad {
+    display: grid;
+    grid-template: 1fr;
+    grid-template-areas:
+    "title"
+    "subtitle"
+    "infos"
+    "buttonStart"
+    "buttonRecorde";
+    justify-content: center;
+}
+
+.title {
+    grid-area: title;
+    margin: 15% 0 15% 0;
+    font-size: 24px;
+}
+
+.subtitle {
+    grid-area: subtitle;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+.infos {
+    grid-area: infos;
+    list-style: none;
+    text-align: center;
+    margin: .5rem;
+    font-weight: 500;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-antiwhite);
+    border-radius: 1rem;
+}
+.buttonStart {
+    grid-area: buttonStart;
+
+}
+
+.buttonStart, .buttonRecorde {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 1rem;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-antiwhite);
+    padding: 1rem;
+    margin-top: 10%;
+    transition: .5s;
+}
+
+.buttonRecorde {
+    grid-area: buttonRecorde;
+    margin-top: 5%;
+    padding: .5rem;
+}
+
+.buttonStart:hover, .buttonRecorde:hover {
+    cursor: pointer;
+    background-color: var(--color-antiwhite-hover);
+    font-size: 22px;
+}

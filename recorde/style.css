@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --color-blue: #d7f6fa;
+    --color-black: #000;
+    --color-antiwhite: #fcf8f3;
+    --color-antiwhite-hover: #ffdcb9;
+    --color-green: rgb(0, 255, 191);
+    --color-red: rgb(255, 0, 70);
+}
+
+body {
+    background-color: var(--color-blue);
+}
+
+.startLoad {
+    display: grid;
+    grid-template: 1fr;
+    grid-template-areas:
+    "title"
+    "user"
+    "chutes"
+    "buttonReset"
+    "status"
+    "buttonWelcome";
+    justify-content: center;
+}
+
+.title {
+    grid-area: title;
+    margin: 15% 0 15% 0;
+    font-size: 24px;
+}
+
+.chutes {
+    grid-area: chutes;
+}
+
+.chutes, .user {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+.user {
+    grid-area: user;
+}
+
+.buttonWelcome, .buttonReset {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 1rem;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-antiwhite);
+    padding: 1rem;
+    margin-top: 10%;
+    transition: .5s;
+}
+.buttonReset {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 1rem;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-antiwhite);
+    padding: 1rem;
+    margin-top: 10%;
+    transition: .5s;
+}
+
+.getStats {
+    transition: .5s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.status {
+    border: 2px solid var(--color-black);
+    border-radius: 1rem;
+    padding: .5rem;
+    text-align: center;
+    transition: .5s;
+}
+
+.green {
+    background-color: var(--color-green);
+}
+.red {
+    background-color: var(--color-red);
+}
+
+
+.buttonWelcome:hover, .buttonReset:hover {
+    cursor: pointer;
+    background-color: var(--color-antiwhite-hover);
+    font-size: 22px;
+}

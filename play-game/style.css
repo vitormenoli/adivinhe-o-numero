@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --color-blue: #d7f6fa;
+    --color-black: #000;
+    --color-antiwhite: #fcf8f3;
+    --color-antiwhite-hover: #ffdcb9;
+}
+
+body {
+    background-color: var(--color-blue);
+}
+
+.startLoad {
+    display: grid;
+    grid-template: 1fr;
+    grid-template-areas:
+    "title"
+    "subtitle"
+    "infos"
+    "buttonTry"
+    "desistir";
+    justify-content: center;
+}
+
+.title {
+    grid-area: title;
+    margin: 15% 0 15% 0;
+    font-size: 24px;
+    transition: .5s;
+}
+
+input[name="tryNumber"] {
+    grid-area: subtitle;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-antiwhite);
+    margin-bottom: 20%;
+    font-weight: 600;
+}
+.infos {
+    grid-area: infos;
+    list-style: none;
+    text-align: start;
+    margin: .5rem;
+    font-weight: 500;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-antiwhite);
+    border-radius: 1rem;
+    padding: 4px;
+    transition: .5s;
+}
+#chutes, #dica, #spanUltimoChute {
+    font-weight: 700;
+    transition: .5s;
+}
+.buttonTry {
+    grid-area: buttonTry;
+}
+.buttonTry, .desistir {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 1rem;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-antiwhite);
+    padding: .5rem;
+    margin-top: 30%;
+    transition: .5s;
+}
+.desistir {
+    margin-top: 5%;
+}
+
+.buttonTry:hover, .desistir:hover {
+    cursor: pointer;
+    background-color: var(--color-antiwhite-hover);
+    font-size: 22px;
+}
+
+.chutes, .dica, .ultimoChute {
+    transition: .5s;
+    background-color: var(--color-antiwhite-hover);
+}
+
+.disabledInput {
+    cursor: not-allowed;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo: Adivinhe o Número</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <section class="startLoad">
+        <h1 class="title">Chute um número de 1 a 1000!</h1>
+        <input type="number" name="tryNumber" id="tryNumber" placeholder="Chute aqui!">
+        <ul>
+            <li class="infos liChutes"><span id="chutes">Chutes: </span><span id="numberChutes">0</span></li>
+            <li class="infos liDica"><span id="dica">Dica: </span><span id="dicaText">Número de 1 a 1000</span></li>
+            <li class="infos liUltimoChute"><span id="spanUltimoChute">Último chute: </span><span id="ultimoChute"> Ainda não existe</span></li>
+        </ul>
+
+        <button class="buttonTry" type="button">Chutar!</button>
+        <button class="desistir" type="button">Desistir!</button>
+    </section>
+</body>
+</html>
