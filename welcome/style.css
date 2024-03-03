@@ -52,7 +52,6 @@ body {
 }
 .buttonStart {
     grid-area: buttonStart;
-
 }
 
 .buttonStart, .buttonRecorde {
@@ -64,6 +63,9 @@ body {
     padding: 1rem;
     margin-top: 10%;
     transition: .5s;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-black);
 }
 
 .buttonRecorde {
